@@ -4,6 +4,7 @@ import { Link, Navigate } from 'react-router-dom';
 import Slider from './slider';
 import Staff from './Staff';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 function Students() {
 
@@ -63,6 +64,7 @@ function Students() {
             </table>
         </div>
         </div>
+        <Footer />
     </div>
   )
 }
