@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(87, 197, 192);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #0085cc;
+background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+}
+.icon{
+    display: none;
+}
+.closeicon{
+    display: none;
+}
+.nvbr ul{
+    display: flex;
+}
+.nvbr ul li{
+    list-style-type: none;
+    cursor: pointer;
+}
+.nvbr ul li :hover{
+    background-color: white;
+}
+.nvbr ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.nvbr ul li a:hover{
+    color: black;
+}
+
+/* src/components/ImageSlider.css */
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+  }
+  
+  .slider img {
+    width: 70%;
+    height: 70vh;
+    object-fit: cover;
+  }
+  
+  .slider button {
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    padding: 15px 2px;
+    background-color: rgb(214, 212, 212);
+  }
+  .prevbutton{
+    left: 25px;
+  }
+  .nextbutton{
+    right: 25px;
+  }
+  .slider button:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  marquee{
+    background-color: red;
+    color: white;
+    height: 5vh;
+  }
+.stff{
+    /* width: 100%;
+    height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page{
+    flex-wrap: wrap;
+}
+.container{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.container ul li{
+    list-style: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.tab-active{
+    background-color: black;
+    color: white;
+}
+.container .tabs .tab:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+.container .pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    background-color: white;
+}
+.container .pages div{
+    position: relative;
+}
+.page{
+    padding: 20px;
+    display: none;
+}
+div .card{
+    width: 15rem;
+    height: 19rem;
+    padding: 5px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+div .card img{
+    width: 200px;
+    height: 300px;
+}
+.active-page{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+table{
+    table-layout: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.box{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    height: 15vh;
+    color: black;
+    font-size: 3rem;
+}
+
+@media (max-width: 600px){
+    header{
+      height: 15vh;
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 3px;
+    }
+    .logo img{
+        width: 90%;
+        height: 100%;
+    }
+    .icon{
+        display: flex;
+        padding-right: 10px;
+        font-size: 50px;
+        color: white;
+    }
+    .closeicon{
+        display: flex;
+        position: absolute;
+        right: 10px;
+    }
+    .nvbr{
+        visibility: hidden;
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        height: 200px;
+        background-color: black;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .active{
+        visibility: visible;
+    }
+    .nvbr ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .nvbr ul li:hover{
+        background-color: white;
+        color: black;
+    }
+    table{
+        width: 80%;
+        height: auto;
+    }
+  } 
