@@ -24,21 +24,3 @@ function App() {
 }
 
 export default App
-
-
-// import React, { useState } from "react"
-//import {BrowserRouter, Routes, Route} from "react-router-dom"
-//import 'bootstrap/dist/css/bootstrap.min.css'
-//import Students from "./Students";
-//import Createuser from "./Createuser";
-//import Update from "./Update";
-
-// function App() {
-
-//   return (
-//     <div>App</div>
-//   )
-// }
-
-// export default App
-
